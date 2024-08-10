@@ -13,7 +13,8 @@ llm_map = {
     "llama-2-70B": "meta-llama/Llama-2-70b-hf",
     # "llama-3-8B": "meta-llama/Meta-Llama-3-8B", meta-llama/Meta-Llama-3.1-8B
     "llama-3-8B": "meta-llama/Meta-Llama-3.1-8B", 
-    "llama-3-70B": "meta-llama/Meta-Llama-3-70B",
+    # "llama-3-70B": "meta-llama/Meta-Llama-3-70B", meta-llama/Meta-Llama-3.1-70B
+    "llama-3-70B": "meta-llama/Meta-Llama-3.1-70B",
     "mixtral-8x7B": "mistralai/Mixtral-8x7B-v0.1",
     "mixtral-8x7B-instruct": "mistralai/Mixtral-8x7B-Instruct-v0.1",
     "phi-3-mini-128k-instruct": "microsoft/Phi-3-mini-128k-instruct",
