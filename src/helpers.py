@@ -225,6 +225,10 @@ def _generate_max_min_values(n, k):
     return before_decimal + after_decimal
 
 def get_num_from_gen(gen, break_str='\n', dim_y=1, max_generated_length=7, num_decimal_places_y=2):
+    # print(gen)
+    # print(type(gen))
+    # print()
+    
     gen = gen.replace(" ","") # remove any spaces, we add spaces for phi
     nums = re.findall(r'-?\d+\.?\d*', gen)
     

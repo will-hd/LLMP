@@ -42,7 +42,8 @@ def sample(args, tokenizer, model, results):
                             x_ordering=results['data']['x_ordering'] if 'x_ordering' in results['data'] else None,
                         )
                         batch_prompts.append(prompt[0])
-
+                        # print(prompt)
+                    # print("new sample")
                     res = hf_generate_batch(
                         model=model,
                         tokenizer=tokenizer,
@@ -74,6 +75,7 @@ def sample(args, tokenizer, model, results):
                             samples[sample_index] = res[i]
                 results['gen'][idx] += samples
                 prompts[idx] += per_sample_prompts
+                
             # Print out the first sample.
             if args.print_prompts:
                 for prompt, gen in zip(prompts, results['gen']):

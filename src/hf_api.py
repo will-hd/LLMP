@@ -180,11 +180,13 @@ def hf_generate_batch(
         renormalize_logits=False,
         pad_token_id=tokenizer.eos_token_id
     )
-
+    # print(f"generate_ids shape.: {generate_ids.shape}")
+    # print(f"generate_ids[0]: {generate_ids[0, num_input_ids:]}")
     gen_strs = tokenizer.batch_decode(
         generate_ids[:, num_input_ids:],
         skip_special_tokens=True,
         clean_up_tokenization_spaces=False
     )
+    # print(f"gen_strs[0]: {gen_strs[0]}")
 
     return gen_strs
